@@ -1,3 +1,6 @@
+/* styles.css */
+
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -5,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f0f0f0; /* Cor de fundo para visualização */
 }
 
 .table-container {
@@ -13,6 +17,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 1000px;
+    background-color: #fff; /* Fundo branco para a tabela */
+    overflow-x: auto; /* Adiciona scroll horizontal caso necessário */
 }
 
 h1 {
@@ -62,4 +68,19 @@ tfoot {
     background-color: #f8f8f8;
     color: #333;
     text-align: center;
+}
+
+/* Estilos para tornar a tabela responsiva */
+@media (max-width: 768px) {
+    .table-container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        overflow-x: auto;
+    }
+}
+
+/* Ícones da Font Awesome */
+.fa-sort {
+    margin-left: 5px;
 }
